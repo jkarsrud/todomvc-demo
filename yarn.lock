@@ -3624,10 +3624,6 @@ nan@^2.3.2:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.5.1.tgz#d5b01691253326a97a2bbee9e61c55d8d60351e2"
 
-navigo@^4.5.1:
-  version "4.5.1"
-  resolved "https://registry.yarnpkg.com/navigo/-/navigo-4.5.1.tgz#c56270717054fa773043d626029b55453d8ba9ad"
-
 negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
@@ -4306,6 +4302,10 @@ rollup@^0.41.4, rollup@^0.41.6:
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.41.6.tgz#e0d05497877a398c104d816d2733a718a7a94e2a"
   dependencies:
     source-map-support "^0.4.0"
+
+route-recognizer@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/route-recognizer/-/route-recognizer-0.3.2.tgz#4ef82b1e9178ccb023143ce718a32b503d526d3a"
 
 rsvp@^3.0.14, rsvp@^3.0.16, rsvp@^3.0.17, rsvp@^3.0.18, rsvp@^3.0.21, rsvp@^3.0.6, rsvp@^3.2.1, rsvp@^3.3.3:
   version "3.5.0"

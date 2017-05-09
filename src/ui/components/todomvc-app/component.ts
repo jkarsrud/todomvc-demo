@@ -1,10 +1,8 @@
 import Component, { tracked } from "@glimmer/component";
-import Navigo from 'navigo';
 import TodoStore from '../../../utils/todo-store';
 import Todo from '../../../utils/todo';
 import { ENTER } from '../../../utils/keys';
-
-const router = new Navigo(null, true);
+import { onChange } from '../../../utils/router';
 
 export default class TodoMVCApp extends Component {
   todoStore = new TodoStore();
@@ -18,13 +16,9 @@ export default class TodoMVCApp extends Component {
     this.todoStore = new TodoStore();
     this.todos = this.todoStore.fetch() || [];
 
-    router
-      .on({
-        '/': () => { this.mode = 'all'; },
-        '/active': () => { this.mode = 'active'; },
-        '/completed': () => { this.mode = 'completed'; },
-      })
-      .resolve();
+    onChange((mode: string, params: any) => {
+      this.mode = mode;
+    });
   }
 
   @tracked('todos') get activeTodos() {
